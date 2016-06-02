@@ -1,0 +1,12 @@
+---
+- name: Ensure users
+  user: "name={{ item.username }} password={{ item.pwhash }}
+    state=absent"
+  with_items: "{{ users }}"
+
+- name: Ensure users' ssh keys
+  authorized_key: "user={{ item.0.username }} key='{{ item.1 }}'
+    state=absent"
+  with_subelements:
+    - "{{ users }}"
+    - sshkeys

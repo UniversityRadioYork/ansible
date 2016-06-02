@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -euo pipefail
+
+if [ $# -gt 0 ] && [ $1 = "-h" ]; then
+	echo "Usage: $0 [host]"
+	exit
+fi
+
+LIMIT=""
+if [ $# -gt 0 ]; then
+	LIMIT="-l $1"
+fi
+
+exec ansible-playbook -K -T30 -i hosts $LIMIT playbook.yml
