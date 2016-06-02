@@ -12,4 +12,4 @@ if [ $# -gt 0 ]; then
 	LIMIT="-l $1"
 fi
 
-exec ansible-playbook -K -T30 -i hosts $LIMIT playbook.yml
+exec ansible-playbook -K -T60 -i hosts $LIMIT playbook.yml

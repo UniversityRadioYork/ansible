@@ -2,6 +2,6 @@
 users:
   - username: testuserplsignore
     name: Charles Pigott
-	pwhash: nope.
+    pwhash: nope
     sshkeys:
      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCntA+4D8gAXocrFrC1MYhAyT2QzS5Qpx2emsg/hhjrxYVizmDQFV0BpqSPXDGEEFAcZNIQay/0i3u6JXoLnoB5xHJYHAk7xlRVKsX3T74MXFxucNQK5ZBlMIDGd2+T1JnqLM4lJ3Qo76q05ljloURFCkkchTsczUiKxKei42RI7bBVAjvZTREqalZQ+Il4j8h7G7Uy3CVkyLxYYQka4vFPAUUGov4BTu/WOtbmmcZ9pkQFIkoGSqXlRznurpgOE5gf+AiPytHGmyvVOz/G2O0Bpha0pgZtxJVVZnEvi8PqLQCHX1qM/GoW50UYIVnKdyhlS6Mg9DByETlC86N6Uj5d lordaro@Donald.Arch

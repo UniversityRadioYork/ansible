@@ -1,4 +1,4 @@
 ---
 - name: blah
-  debug:
+  command: uname -a
 #- include: create_users.yml
