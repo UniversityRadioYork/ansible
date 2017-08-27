@@ -1,24 +1,22 @@
 [freebsd]
-#logger2.york.ac.uk
 ury.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
-urybackup0.york.ac.uk
+urybackup0.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
 uryblue.york.ac.uk
 urybsod.york.ac.uk
-uryrrod.york.ac.uk
-urystv.york.ac.uk
+uryrrod.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
+urystv.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
 
 [debian]
 dolby.ury.york.ac.uk
 jukebox.york.ac.uk
-studio1guest.york.ac.uk
-uryfs1.york.ac.uk
 uryfw0.york.ac.uk
 uryred.york.ac.uk
 
 [windows]
 production.york.ac.uk
+studio1guest.york.ac.uk
 studio2.york.ac.uk
-themis.york.ac.uk
-wallpc1.york.ac.uk
-wallpc2.york.ac.uk
+wogan.ury.york.ac.uk
+wallpc3.york.ac.uk
+wallpc4.york.ac.uk
 urystudio1.york.ac.uk
