@@ -1,0 +1,28 @@
+- name: Upgrade packages
+  hosts: "!windows"
+  tasks:
+    - name: Run apt
+      become: yes
+      apt:
+        upgrade: safe
+        update_cache: yes
+      when: ansible_distribution == "Debian"
+
+    - name: Fetch any new FreeBSD updates
+      become: yes
+      shell: freebsd-update --not-running-from-cron fetch
+      when: ansible_distribution == 'FreeBSD'
+      register: result_update
+      changed_when: "'No updates needed' not in result_update.stdout"
+
+    - name: Install FreeBSD updates
+      become: yes
+      shell: freebsd-update --not-running-from-cron install
+      when: ansible_distribution == 'FreeBSD' and result_update.changed
+
+    - name: Run pkg
+      become: yes
+      shell: pkg upgrade
+      when: ansible_distribution == "FreeBSD"
+      register: result_pkg
+      changed_when: "'Your packages are up to date' not in result_pkg.stdout"

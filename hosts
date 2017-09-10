@@ -1,7 +1,7 @@
 [freebsd]
 ury.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
 urybackup0.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
-uryblue.york.ac.uk
+#uryblue.york.ac.uk
 urybsod.york.ac.uk
 uryrrod.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
 urystv.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
@@ -10,7 +10,7 @@ urystv.york.ac.uk ansible_python_interpreter=/usr/local/bin/python2
 dolby.ury.york.ac.uk
 jukebox.york.ac.uk
 uryfw0.york.ac.uk
-uryred.york.ac.uk
+#uryred.york.ac.uk
 
 [windows]
 production.york.ac.uk
